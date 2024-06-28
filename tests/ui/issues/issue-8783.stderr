@@ -1,0 +1,16 @@
+warning: struct `X` is never constructed
+  --> $DIR/issue-8783.rs:5:8
+   |
+LL | struct X { pub x: usize }
+   |        ^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: struct `Y` is never constructed
+  --> $DIR/issue-8783.rs:12:8
+   |
+LL | struct Y<T> { pub y: T }
+   |        ^
+
+warning: 2 warnings emitted
+
